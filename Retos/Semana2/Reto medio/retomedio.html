@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="post" action="#">
+        <div>
+            <div><h2>Bienvenido!</h2></div>
+            <div><h3>Registrate para ingresar</h3></div>
+
+            <div class="titles1">Primer nombre</div>
+            <div><input type="text" maxlength="6" required></div>
+
+            <div class="titles1">Edad</div>
+            <div><input type="number" max="120" required></div>
+
+            <div class="titles1">Ingresos</div>
+            <div><input type="number" required></div>
+
+            <div class="titles1">Mas informacion</div>
+            <textarea></textarea>
+
+            <div class="titles1">Genero</div>
+            <div>
+                <input type="radio" name="genero" value="Masculino" checked="true">Masculino
+                <input type="radio" name="genero" value="Femenino">Femenino
+                <input type="radio" name="genero" value="Trans">Trans
+            </div>
+
+            <div class="titles1">Plan</div>
+            <div><select name="plan" id="">
+                    <option value="Basico">Basico</option>
+                    <option value="Intermedio">Intermedio</option>
+                    <option value="Avanzado">Avanzado</option>
+                </select>
+            </div>
+
+            <div id="boletin"><input type="checkbox" value="Suscribe">Suscribete a nuestro boletin</div>
+            <input type="button" value="Registrarse">
+        </div>
+    </form>
+
+</body>
+</html>

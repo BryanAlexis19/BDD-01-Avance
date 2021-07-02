@@ -1,0 +1,55 @@
+body {
+    display: flex;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(231, 229, 229);
+    margin-left: 15px;
+    margin-top: 10px;
+    padding: 30px;
+    padding-top: 20px;
+    font-family: "Comic Sans Ms"
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+input[type=text], input[type=number]{
+    margin-bottom: 15px;
+}
+
+input[type=radio], input[type=checkbox] {
+    margin-bottom: 20px;
+    
+}
+
+select {
+    margin-bottom: 15px;
+}
+
+input[type=button] {
+    background-color: rgb(47, 122, 207);
+    border: none;
+    padding: 10px;
+    font-weight: bolder;
+    color: white;
+    font-size: medium;
+    border-radius: 5px;
+}
+
+.titles1 {
+    font-weight: bold;
+    font-size: small;
+
+}
+
+#boletin {
+    font-size: small;
+}
+
+textarea {
+    resize: none;
+}
