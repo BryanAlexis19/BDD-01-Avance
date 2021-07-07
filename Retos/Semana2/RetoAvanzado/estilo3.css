@@ -1,15 +1,8 @@
 body {
     background-image: url("img/wallpaperLight.jpg");
-}
-
-form {
     display: flex;
     flex-direction: column;
-    background-color: rgb(170, 204, 161);
-    width: 350px;
-    margin: 20px;
-    padding: 15px;
-    font-family: "Comic Sans Ms";
+    margin: 0px;
 }
 
 h2 {
@@ -24,8 +17,105 @@ input[type=button] {
     margin-top: 20px;
 }
 
-label > input {
-
-    margin-bottom: 15px;
+/* Selectores "hijos inmediatos" se una signo mayor */
+form > input {
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
+
+ul > li {
+    font-weight: bold;
+    border-bottom-style: solid;
+    border-color: gray;
+    border-width: 2px;
+}
+
+ol > li {
+    color: dodgerblue;
+    margin: 10px;
+    
+}
+
+ol > li:hover {
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: unset;
+}
+
+/* Selectores que le siguen a otra etiqueta (+) */
+label + textarea {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* Selectores contenidos en X etiqueta */
+body form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(170, 204, 161);
+    width: 350px;
+    margin: 20px;
+    padding: 15px;
+    font-family: "Comic Sans Ms";
+}
+
+form input[type=button] {
+    color: white;
+    font-size: 20px;
+    font-family: "Comic Sans Ms";
+    background-color:rgb(72, 120, 192);
+    border-style: none;
+    width: 100px;
+    height: 50px;
+    justify-self: center;
+}
+
+
+/* Selector Sibling - Todos los 
+elementos debajo de cierta etiqueta (~) */
+
+/* form ~ div {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    background-color: gray;
+    width: unset;
+    height: 200px;
+} */
+
+/* Selectores de pseudo-elementos llevan dos puntos */
+
+form input::placeholder{
+    
+    font-weight: bold;
+    font-family: "Consolas";    
+}
+
+form input[type=button]:hover{
+    background-color: rgb(175, 69, 207);
+}
+
+#header1 {
+    display: flex;
+    flex-direction: column;
+    border-style: groove;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+#footer1 {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    background-color: gray;
+    width: unset;
+    height: 200px;
+}
+
+
+
+
+
+
 
