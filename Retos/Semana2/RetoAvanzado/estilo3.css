@@ -113,6 +113,34 @@ form input[type=button]:hover{
     height: 200px;
 }
 
+/* Selectores regex 
+
+Selector que encuentra coincidencias
+de palabra en las clases
+[class*="dog"] {
+    color: red;
+}
+
+Selector que encuentra coincidencia 
+en la primera palabra de la clase
+[class^="icon"] {
+    color: blue;
+}
+
+Selector que encuentra coincidencia
+en la ultima palabra de la clase
+[class$="pet"]{
+    color: pink;
+} */
+
+/* Si se quiere que los elementos
+hereden por fuerza las propiedades
+de sus elementos padres se debe establecer
+el atributo inherit. (tambien unset, initial)
+
+a {
+    color: inherit;
+} */
 
 
 
