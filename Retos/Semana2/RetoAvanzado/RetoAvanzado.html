@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +8,20 @@
     <link rel="stylesheet" href="estilo3.css" type="text/css">
     <title>Formulario de Contacto</title>
 </head>
+
 <body>
 
     <div id="header1">
-    <ul>
-        <li>Inicio</li>
-        <li>Contacto</li>
-        <li>Nosotros</li>
-        <li>Canales de atención</li>
-        <ol>
-            <li>Redes Sociales</li>
-            <li>Google maps</li>
-        </ol>
-    </ul>
+        <ul>
+            <li>Inicio</li>
+            <li>Contacto</li>
+            <li>Nosotros</li>
+            <li>Canales de atención</li>
+            <ol>
+                <li>Redes Sociales</li>
+                <li>Google maps</li>
+            </ol>
+        </ul>
     </div>
 
     <form action="post">
@@ -31,16 +33,12 @@
             required, disabled, readonly
          -->
         <h2>Formulario de contacto</h2>
-        
+
         <label for="nombre">Primero Nombre</label>
-        <input type="text" name="nombre" id="nombre" 
-        placeholder="Ingrese su nombre" 
-        minlength="6" required>
+        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" minlength="6" required>
 
         <label for="apellido">Apellido</label>
-        <input type="text" name="apellido" id="apellido" 
-        placeholder="Ingrese su apellido" 
-        minlength="6" required>
+        <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido" minlength="6" required>
 
         <label for="email">Correo electrónico</label>
         <input type="email" name="email" id="email" placeholder="Ingrese su@correo.com" required>
@@ -48,43 +46,114 @@
         <!-- Producto de nombre de 10 caracteres 
         + 3 digitos del 0 al 5 repeditos 2 veces -->
         <label for="producto">Nombre del Producto</label>
-        <input type="text" name="producto" id="producto" 
-        placeholder="Ingrese nombre del producto" 
-        required pattern="[A-Za-z]{10}">
+        <input type="text" name="producto" id="producto" placeholder="Ingrese nombre del producto" required
+            pattern="[A-Za-z]{10}">
 
         <label for="cantidad">Cantidad del producto</label>
-        <input type="search" name="cantidad" id="cantidad" 
-        placeholder="Ingrese cantidad de producto" 
-         required>
+        <input type="search" name="cantidad" id="cantidad" placeholder="Ingrese cantidad de producto" required>
 
         <label for="telefono">Numero de Telefono</label>
-        <input type="tel name="telefono" id="telefono" 
-        placeholder="Ingrese numero de telefono" 
-         required> 
+        <input type="tel name=" telefono" id="telefono" placeholder="Ingrese numero de telefono" required>
 
         <label for="mensaje">Mensaje</label>
-        <textarea  class="message-area" name="mensaje" id="mensaje" 
-        cols="30" rows="10"
-        minlength="20" maxlength="140"
-         ></textarea>
+        <textarea class="message-area" name="mensaje" id="mensaje" cols="30" rows="10" minlength="20"
+            maxlength="140"></textarea>
 
         <input type="submit" value="Enviar" name="Enviar">
 
     </form>
 
-    <div id="footer1">
+    <table border="1">
+        <thead>
+            <th id="cabezaTab" colspan="6">Equivalencia de medidas de medida</th>
+            <tr>
+                <th>Titulo</th>
+                <th>16px</th>
+                <th>1em</th>
+                <th>12pt</th>
+                <th>100%</th>
+                <th>1rem</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <h1>h1</h1>
+                </td>
+                <td class="TamPx"><label>h1</label></td>
+                <td class="TamEm"><label>h1</label></td>
+                <td class="TamPt"><label>h1</label></td>
+                <td class="TamPor"><label>h1</label></td>
+                <td class="TamRem"><label>h1</label></td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>h2</h2>
+                </td>
+                <td class="TamPx"><label>h2</label></td>
+                <td class="TamEm"><label>h2</label></td>
+                <td class="TamPt"><label>h2</label></td>
+                <td class="TamPor"><label>h2</label></td>
+                <td class="TamRem"><label>h2</label></td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>h3</h3>
+                </td>
+                <td class="TamPx"><label>h3</label></td>
+                <td class="TamEm"><label>h3</label></td>
+                <td class="TamPt"><label>h3</label></td>
+                <td class="TamPor"><label>h3</label></td>
+                <td class="TamRem"><label>h3</label></td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>h4</h4>
+                </td>
+                <td class="TamPx"><label>h4</label></td>
+                <td class="TamEm"><label>h4</label></td>
+                <td class="TamPt"><label>h4</label></td>
+                <td class="TamPor"><label>h4</label></td>
+                <td class="TamRem"><label>h4</label></td>
+            </tr>
+            <tr>
+                <td>
+                    <h5>h5</h5>
+                </td>
+                <td class="TamPx"><label>h5</label></td>
+                <td class="TamEm"><label>h5</label></td>
+                <td class="TamPt"><label>h5</label></td>
+                <td class="TamPor"><label>h5</label></td>
+                <td class="TamRem"><label>h5</label></td>
+            </tr>
+            <tr>
+                <td>
+                    <h6>h6</h6>
+                </td>
+                <td class="TamPx"><label>h6</label></td>
+                <td class="TamEm"><label>h6</label></td>
+                <td class="TamPt"><label>h6</label></td>
+                <td class="TamPor"><label>h6</label></td>
+                <td class="TamRem"><label>h6</label></td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <footer>
 
         <div class="cajas">
-            <div>
-                <img src="" alt="Imagen de ref.">
+            <div class="subcajas">
+                <img src="https://images.vexels.com/media/users/3/140003/isolated/preview/960816ac80434d43526b1968ffa415e3-icono-de-formulario-de-contacto.png"
+                    alt="Imagen de ref.">
             </div>
-            <div>
+            <div class="subcajas">
                 <div>Web Technologies</div>
                 <div>Learn Web Development</div>
                 <div>About this</div>
                 <div>Feedback</div>
             </div>
-            <div>
+            <div class="subcajas">
                 <div>About us</div>
                 <div>MDN Web Docs Store</div>
                 <div>Contact us</div>
@@ -92,9 +161,10 @@
             </div>
         </div>
 
-        <div class="copyright"></div>   
+        <div class="copyright">BRYAN DIAZ DREYFUS - TODOS LOS DERECHOS RESERVADOS - 2021</div>
 
-    </div>
+    </footer>
 
 </body>
+
 </html>

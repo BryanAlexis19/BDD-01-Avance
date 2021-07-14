@@ -2,14 +2,16 @@ body {
     background-image: url("img/wallpaperLight.jpg");    
     display: flex;
     flex-direction: column;
-    margin: 0px;
+    margin: 0%;
     height: 100%;
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: space;
+    background-size: 100%;
+
+    
 }
 
-h2 {
+form h2 {
     text-align: center;
 }
 
@@ -63,6 +65,7 @@ body form {
     margin: 20px;
     padding: 15px;
     font-family: "Comic Sans Ms";
+    align-self: center;
 }
 
 form input[type=submit] {
@@ -105,19 +108,61 @@ form input[type=button]:hover{
     display: flex;
     flex-direction: column;
     border-style: groove;
-    margin: 20px;
+    width: 80%;
+    margin: 1em;
     padding: 15px;
     border-radius: 20px;
+    align-self: center;
 }
 
-#footer1 {
+footer {
     display: flex;
     flex-direction: row;
     margin: 0px;
-    background-color: gray;
-    width: unset;
-    height: 200px;
+    background-color: #000;
+    width: 100%; /*Las medidas vw y
+             vh son unidades respecto al tamano del viewport
+            100vw = todo el ancho del viewport*/
+    height: 40vh;
+    justify-content: flex-start;
+    
 }
+
+.cajas {
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.copyright {
+    display: flex;
+    background-color: blue;
+    margin: 5%;
+    padding: 2%;
+
+}
+.subcajas {
+background-color: green;
+margin: 3%;
+padding: 3%;
+width: 160%;
+height: 60%;
+font-size: 1.2rem;
+font-weight: bold;
+
+}
+
+.subcajas > div {
+    margin: 5%;
+    width: 150%;
+}
+
+.subcajas img {
+    width: 6em;
+}
+
+
 
 /* Selectores regex 
 
@@ -147,6 +192,40 @@ el atributo inherit. (tambien unset, initial)
 a {
     color: inherit;
 } */
+
+table  {
+    background-color: burlywood;
+    width: 70%;
+    margin: 5%;
+    text-align: center;
+    align-self: center;  
+}
+
+
+#cabezaTab {
+    text-transform: uppercase;
+}
+
+.TamPx > label{
+    font-size: 16px;
+}
+
+.TamEm > label{
+    font-size: 1em;
+}
+
+.TamPt > label{
+    font-size: 12pt;
+}
+
+.TamPor > label{
+    font-size: 100%;
+}
+
+.TamRem > label{
+    font-size: 1rem;
+}
+
 
 
 
