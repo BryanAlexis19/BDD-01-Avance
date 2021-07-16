@@ -1,17 +1,162 @@
 body {
-    margin: 0%;
-    display: flex;    
+    display: flex;
+    flex-direction: column;
+    margin: 0%;    
+    font-family: 'Ubuntu Condensed';
+    
 }
 
 header {
     display: flex;
+    flex-direction: column;
     width: 100vw;
-    height: 300px;
+    height: auto;
     background-color: #000;
-    color: #fff;    
+    color: #fff;
+    justify-content: center;
+    align-items: center;    
 }
 
+.subtitulo {
+
+    margin-top: 2rem;   
+    font-weight: normal;
+}
+
+.titulo {
+
+    margin-top: 2rem;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: normal;
+}
+
+.boton {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color:rgb(129, 122, 122);    
+    border-style: none;
+    border-radius: 0px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
+    .subtitulo {
+        margin-top: 2rem;   
+        font-weight: normal;
+        font-size: 1.5rem;
+    }
+    
+    .titulo {
+    
+        margin-top: 2rem;
+        font-size: 4.1rem;
+        text-align: center;
+        font-weight: normal;
+    }
+    
+    .boton {
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.7rem;
+        background-color:rgb(129, 122, 122);    
+        border-style: none;
+        border-radius: 0px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
 }
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .subtitulo {
+
+        margin-top: 2rem;   
+        font-weight: normal;
+        font-size: 1.3rem;
+    }
+    
+    .titulo {
+    
+        margin-top: 1rem;
+        font-size: 4rem;
+        text-align: center;
+        font-weight: normal;
+    }
+    
+    .boton {
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.3rem;
+        background-color:rgb(129, 122, 122);    
+        border-style: none;
+        border-radius: 0px;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .subtitulo {
+
+        margin-top: 2rem;   
+        font-weight: normal;
+        font-size: 2rem;
+    }
+    
+    .titulo {
+    
+        margin-top: 1rem;
+        font-size: 5rem;
+        text-align: center;
+        font-weight: normal;
+    }
+    
+    .boton {
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.3rem;
+        background-color:rgb(129, 122, 122);    
+        border-style: none;
+        border-radius: 0px;
+        padding: 10px;
+        margin-bottom: 50px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .subtitulo {
+
+        margin-top: 2rem;   
+        font-weight: normal;
+        font-size: 2rem;
+    }
+    
+    .titulo {
+    
+        margin-top: 0.5rem;
+        font-size: 5rem;
+        text-align: center;
+        font-weight: normal;
+    }
+    
+    .boton {
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.5rem;
+        background-color:rgb(129, 122, 122);    
+        border-style: none;
+        border-radius: 0px;
+        padding: 10px;
+        margin-bottom: 40px;
+    }
+}
