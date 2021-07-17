@@ -3,13 +3,12 @@ body {
     flex-direction: column;
     margin: 0%;    
     font-family: 'Ubuntu Condensed';
-    
+    box-sizing: border-box;    
 }
 
 header {
     display: flex;
     flex-direction: column;
-    width: 100vw;
     height: auto;
     background-color: #000;
     color: #fff;
@@ -18,13 +17,11 @@ header {
 }
 
 .subtitulo {
-
     margin-top: 2rem;   
     font-weight: normal;
 }
 
 .titulo {
-
     margin-top: 2rem;
     font-size: 4rem;
     text-align: center;
@@ -40,6 +37,40 @@ header {
     border-radius: 0px;
     padding: 10px;
     margin-bottom: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    margin: 5%;
+    padding: 5% 20% 20% 20%;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 15px 29px 11px 24px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 15px 29px 11px 24px rgba(0,0,0,0);
+
+}
+
+.titulo-card {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15%;
+}
+
+.imagen-card, main > .card > svg {
+    width: auto;
+    height: 13em;
+}
+
+.descripcion-card {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 5%;    
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -71,7 +102,42 @@ header {
         padding: 10px;
         margin-bottom: 20px;
     }
+   
+
+    
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+        margin: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 5% 20% 12% 20%;
+        -webkit-box-shadow: 0px 10px 13px -7px #000000, 15px 29px 11px 24px rgba(0,0,0,0); 
+        box-shadow: 0px 10px 13px -7px #000000, 15px 29px 11px 24px rgba(0,0,0,0);
+    
+    }
+    
+    .titulo-card {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 15%;
+    }
+    
+    .imagen-card, main > .card > svg {
+        width: auto;
+        height: 13em;
+    }
+    
+    .descripcion-card {
+        font-size: 1.4rem;
+        text-align: center;
+        padding: 5%;    
+    }
 }
+
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -101,7 +167,45 @@ header {
         padding: 10px;
         margin-bottom: 30px;
     }
+
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+        margin: 5%;
+        margin-left: 16%;
+        margin-right: 16%;
+        padding: 5% 20% 10% 20%;
+        -webkit-box-shadow: 0px 10px 13px -7px #000000, 15px 29px 11px 24px rgba(0,0,0,0); 
+        box-shadow: 0px 10px 13px -7px #000000, 15px 29px 11px 24px rgba(0,0,0,0);
+    
+    }
+    
+    .titulo-card {
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-bottom: 15%;
+    }
+    
+    .imagen-card, main > .card > svg {
+        width: auto;
+        height: 13em;
+    }
+    
+    .descripcion-card {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 5%;    
+    }
 }
+
+
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -129,6 +233,39 @@ header {
         border-radius: 0px;
         padding: 10px;
         margin-bottom: 50px;
+    }
+
+
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+        margin: 5%;
+        margin-left: 16%;
+        margin-right: 16%;
+        padding: 5% 20% 10% 20%;
+        -webkit-box-shadow: 0px 10px 13px -7px #000000, 15px 29px 11px 24px rgba(0,0,0,0); 
+        box-shadow: 0px 10px 13px -7px #000000, 15px 29px 11px 24px rgba(0,0,0,0);
+    
+    }
+    
+    .titulo-card {
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-bottom: 15%;
+    }
+    
+    .imagen-card, main > .card > svg {
+        width: auto;
+        height: 13em;
+    }
+    
+    .descripcion-card {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 5%;    
     }
 }
 
