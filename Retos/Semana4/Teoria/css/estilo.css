@@ -1,0 +1,18 @@
+.grid {
+    display: grid;
+    /* tamanio especifico para filas y columnas */
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 100px;
+    /* Espaciado para filas y columnas */
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    color: white;
+}
+
+.grid div {
+    background: red;
+}
+
+.grid div:nth-child(even) {
+    background: blue;
+}
