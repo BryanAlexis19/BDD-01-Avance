@@ -6,11 +6,59 @@
     /* Espaciado para filas y columnas */
     grid-row-gap: 10px;
     grid-column-gap: 10px;
+    margin: 50px;
     color: white;
+    border: 2px black;
+    border-style: solid;
 }
+
+.jicenter {
+    justify-items: center;
+}
+
+.jistart {
+    justify-items: start;
+}
+
+.jiend {
+    justify-items: end;
+}
+
+.jistretch {
+    justify-items: stretch;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.bgtitg {
+    color: white;
+    background: green;
+}
+
+.aicenter {
+    align-items: center;
+}
+
+.aistart {
+    align-items: start;
+}
+
+.aiend {
+    align-items: end;
+}
+
+.aistretch {
+    align-items: stretch;
+}
+
 
 .grid div {
     background: red;
+    padding: 2px;
+    margin: 5px;
+    border-style: outset;
 }
 
 .grid div:nth-child(even) {
