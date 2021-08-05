@@ -12,6 +12,30 @@
     border-style: solid;
 }
 
+.grid2 {
+    display: grid;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    margin: 50px;
+    color: white;
+    border: 2px black;
+    border-style: solid;
+    background: greenyellow;
+}
+
+.gridrepeat {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gridautofill {
+    grid-template-columns: repeat(auto-fill,minmax(100px, 1fr));
+}
+
+.gridautofit {
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+}
+
+/* JUSTIFY ITEMS */
 .jicenter {
     justify-items: center;
 }
@@ -37,6 +61,7 @@
     background: green;
 }
 
+/* ALIGN ITEMS */
 .aicenter {
     align-items: center;
 }
@@ -54,13 +79,167 @@
 }
 
 
-.grid div {
+.grid div, .grid2 div {
     background: red;
     padding: 2px;
     margin: 5px;
     border-style: outset;
 }
 
-.grid div:nth-child(even) {
+.grid div:nth-child(even), .grid2 div:nth-child(even) {
     background: blue;
+}
+
+.indice {
+    border-style: dotted;
+    font-size: 1.5rem;
+    padding: 2%;
+}
+
+.indice a:visited {
+    color: crimson;
+}
+
+.indice a:link {
+    color: green;
+}
+
+.indice div {
+    margin: 10px;
+}
+
+/*-------- JUSTIFYcontent------------ */
+
+.jcstart {
+    justify-content: start;
+}
+
+.jccenter {
+    justify-content: center;
+}
+
+.jcsparound {
+    justify-content: space-around;
+}
+
+.jcspevenly {
+    justify-content: space-evenly;
+}
+
+.jcend {
+    justify-content : end;
+}
+
+.jcstretch {
+    justify-content: stretch;
+}
+
+.jcspbetween {
+    justify-content: space-between;
+}
+
+/*-------- ALIGN CONTENT -------------*/
+
+.acstart {
+    align-content: start;
+}
+
+.accenter {
+    align-content: center;
+}
+
+.acsparound {
+    align-content: space-around;
+}
+
+.acspevenly {
+    align-content: space-evenly;
+}
+
+.acend {
+    align-content : end;
+}
+
+.acstretch {
+    align-content: stretch;
+}
+
+.acspbetween {
+    align-content: space-between;
+}
+
+.maxvh {
+    height: 70vh;
+}
+
+/* ---------JUSTIFY-SELF--------- */
+
+.jsstart {
+    justify-self: start;
+}
+
+.jsend {
+    justify-self: end;
+}
+
+.jscenter {
+    justify-self: center;
+}
+
+.jsstretch {
+    justify-self: stretch;
+}
+
+/* ---------ALIGN-SELF--------- */
+
+.asstart {
+    align-self: start;
+}
+
+.asend {
+    align-self: end;
+}
+
+.ascenter {
+    align-self: center;
+}
+
+.asstretch {
+    align-self: stretch;
+}
+
+/* ----------POSICIONAMIENTO------------ */
+
+.child1 {
+   grid-column-start:1;
+   grid-column-end: span 2;   
+}
+
+.child4 {
+    grid-row-start: 1;
+    grid-row-start: span 2;
+}
+
+.child6 {
+    
+    grid-column-start: 3;
+    grid-column-end: span 2;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+}
+
+.child9 {
+    grid-column-end: 7;
+}
+
+/* ------GRID IMPLICITO------ */
+
+.implicit {
+    grid-auto-columns: 50px;
+    grid-auto-rows: 150px;
+}
+.autogrid {    
+    /* TIPO DE RELLENADO AUTOMATICO CON "FLOW" */
+    grid-auto-flow: dense;
+    
 }
