@@ -1,0 +1,73 @@
+/* body:first-child(){
+    display: flex;
+    border: 1px solid gray;
+} */
+
+* {
+    font-family: "Comic Sans Ms";
+    
+}
+
+#firstTask {
+    display: grid;        
+    border: 1px solid gray;
+    height: 90px;
+    width: 400px;
+    grid-template-rows: repeat(2,1fr);
+    justify-content: center;
+    justify-items: center;        
+}
+
+div form {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;    
+    margin: 10px;
+}
+
+form button {
+    background: rgb(131, 175, 66);
+    border: 1px solid gray;
+    color: white;
+}
+
+#options{
+    display: inline-flex;
+    width: 350px;
+    padding: 5px;
+    margin: 0px;
+    align-items: center;
+    height: 20px;
+}
+
+#lblDone, #lblAll{
+    margin-right: 5px;
+    margin-left: 5px;
+    color: blue;
+}
+
+#lblDone:hover, #lblAll:hover{
+    font-style: italic;
+}
+
+#tasks{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    border: 1px solid gray;
+    margin-top: 15px;
+    width: 400px;
+    height: 30vh;    
+    align-items: flex-start;
+}
+
+.border{
+    border: 1px solid gray;
+}
+
+.gray {
+    background: rgba(224, 221, 221, 0.877);
+}
+
+
+
