@@ -28,7 +28,8 @@ header {
 }
 
 .titulo:hover {
-    color: #000;
+    color: yellow;
+    font-size: 6rem;
 }
 
 .boton {
@@ -54,7 +55,7 @@ main {
 }
 
 .card {
-    background-color: rgb(216, 224, 224);
+    background-color: rgb(46, 202, 194);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,7 +67,7 @@ main {
 }
 
 .card:hover {
-    background-color: white;
+    background-color: orange;
 }
 
 .titulo-card {
