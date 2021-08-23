@@ -1,0 +1,47 @@
+input, textarea, div {
+  border: 1px solid blue; }
+
+input, textarea, div {
+  margin: 10px; }
+
+form {
+  display: grid; }
+
+div {
+  width: 250px;
+  height: 320px;
+  color: black; }
+
+aside {
+  background-color: gray; }
+
+h1, h2, h3 {
+  font-family: verdana; }
+
+body {
+  color: white;
+  background: default;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: arial; }
+
+nav {
+  background-color: green;
+  padding: 10px;
+  color: white; }
+  nav ul {
+    display: flex;
+    list-style: none; }
+  nav li {
+    margin: 0 10px; }
+  nav a {
+    text-decoration: none;
+    color: inherit; }
+    nav a:hover {
+      text-decoration: underline; }
+
+.button-primary {
+  background-color: green; }
+
+.button-secondary {
+  background-color: red; }

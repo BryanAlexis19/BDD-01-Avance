@@ -1,0 +1,87 @@
+//VARIABLES
+$color: white;
+$bg_color: default;
+$font-default: arial;
+$font-family: verdana;
+$font-size-default: 13px;
+$color-primary: green;
+$color-secondary: red;
+$color-bla: black;
+
+
+//EXTEND O INHERITANCE
+    //Declaramos una propiedad compartida con %
+    %border-shared{
+        border: 1px solid blue;
+    }
+
+    %margin-shared {
+        margin: 10px;    
+    }
+    //Se implementa la propiedad con @extend en algun selector con @extend
+    input {
+        @extend %border-shared;
+        @extend %margin-shared;
+    }
+
+    textarea {
+        @extend %border-shared;
+        @extend %margin-shared;
+    }
+
+//MIXINS : CREAR FUNCIONES QUE RECIBAN PARAMETROS
+    //Crear la funcion con @mixin 'FunctionName'(args){}
+    @mixin display($display) {
+        display: $display;
+    }
+
+    //llamar con @include a la funcion dentro de algun selector
+    form{
+        @include display(grid);        
+    }
+
+//FUNCIONES: DEVUELVEN UN VALOR EN ESPECIFICO
+    //Declarar la funcion con @Function y @return
+    @function porcentaje($valor, $total){
+        @return $valor * $total / 100;
+    }
+
+    //Aplivar la funciom que retorna un valor
+    div {
+        @extend %margin-shared;
+        @extend %border-shared;
+        width: porcentaje(50,500)#{px};
+        height: porcentaje(80,400)#{px};
+        color: $color-bla;
+    }
+
+    //CONTROL DE FLUJO: MIXINX + IF ELSE + control de error
+
+    @mixin setBgColor($value){
+        @debug "El valor es" $value;
+        @if($value==1){
+            background-color: red;
+        }@else if($value==2){
+            background-color: blue;
+        }@else if($value==3){
+            background-color: yellow;
+        }@else{
+            // @error detiene el proceso
+            
+            @warn "El color " $value " no existe";
+            background-color: gray;
+        }
+    }
+
+    aside {
+        @include setBgColor(4);
+    }
+
+
+
+
+// ARCHIVOS PARCIALES E IMPORT
+@import './components/title';
+@import './components/body';
+@import './components/nav';
+@import './components/button';
